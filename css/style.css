@@ -67,7 +67,7 @@ main .main_post article h2 {
 }
 
 main .main_post article .subtitle {
-    width:70ch;
+    width:60ch;
     font-size:1.5rem;
     color: rgba(0,0,0,0.7);
     padding:.5rem 0;
@@ -168,6 +168,10 @@ footer a {
         padding:1rem;
     }
 
+    main .main_post article div:first-child {
+        width:100%;
+    }
+
     main .main_post article h2 {
         font-size:1.8rem;
     }
@@ -186,10 +190,20 @@ footer a {
     
     main .posts article {
         padding: .7rem 0;
+        text-align:center;
     }
-    
+
+    main .posts article img {
+        width:85%;
+    }
+
     main .posts article h2 {
         font-size:1.5rem;
+        margin:auto;
+    }
+
+    main .posts article .separator {
+        margin:auto;
     }
 
     main article .origin_info {
@@ -201,6 +215,14 @@ footer a {
 @media screen and (max-width: 720px) {
    
     /* Main Post */
+
+    main .main_post {
+        padding:0;
+    }
+
+    main .main_post article div:first-child {
+        width:90%;
+    }
 
     main .main_post article {
         padding:0;
@@ -225,11 +247,18 @@ footer a {
 
     main .posts article {
         padding: .7rem 0;
+        text-align:center;
+    }
+
+    main .posts article img {
+        width:65%;
     }
 
     main .posts article h2 {
-        width:100%;
+        width:30ch;
         font-size: 1rem;
+        text-align:center;
+        margin:auto;
     }
 
     /* footer */
@@ -242,4 +271,31 @@ footer a {
     main article .origin_info {
         font-size:.7rem;
     }
+}
+
+@media screen and (max-width: 450px) {
+    /* Main Post */
+    
+    main .main_post article h2{
+        font-size: 1.1rem;
+    }
+
+    main .main_post article .subtitle {
+        font-size:.7rem;
+    }
+
+    /* Other Posts */
+    main .posts article h2 {
+        font-size:.8rem;
+        width:25ch;
+    }
+
+    main .posts article img {
+        width:80%;
+    }
+
+    main .posts article .separator {
+        margin:auto;
+    }
+
 }
